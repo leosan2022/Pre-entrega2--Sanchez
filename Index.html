@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>TopDrummer-Home</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="sale of drum instrument accessories">
-    <meta name="keywords" content="html, topdrummer, drummers, shop drummer, cymbals, drums sets, drumsticks, hardware, snares">
-    <title>Document</title>
+    <title></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="./images/logo (1).ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 <body>
     <div class="container-fluid">
@@ -30,60 +26,64 @@
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div>
-                    <svg class="carrito" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>  
-                    </svg>
+                  <div class="navbar-nav">
+                    <a class="header__menu" href="./Index.html"> Home</a> 
+                    <a class="header__menu" href="./Drums sets.html">Drums sets</a> 
                 </div>
-                        <div class="navbar-nav"> //*DOM*/
-                            <a class="header__menu" href="./Index.html"> Home</a> 
-                            <a class="header__menu" href="./pages/drums sets.html">Drums sets</a>
-                            <a class="header__menu" href="./pages/cymbals.html">Cymbals</a>
-                            <a class="header__menu" href="./pages/hardware.html">Hardware</a>
-                            <a class="header__menu" href="./pages/snares.html">Snares</a>
-                            <a class="header__menu" href="./pages/drumsticks.html">Drumsticks</a>
-                            <a class="header__menu" href="./sale.html">SUPER SALE</a>  
-                        </div>
-                    </div>
-                </div>
-            </nav>                           
-        </header>
-        <main class="row">
-            <p class="cuerpo">
-               We have been serving drummers since 1994 in the heart of New York. 
-                On these pages you will find a summary of the products that we offer.
-                Also, if you would like to get rid of that old drumkit up in the attic: just contact us!</p>
-            <section>
-                    <h3>SUPER SALE</h3>
-            </section>
-            <div class="cuerpo__supersale row">
-                <div class="parrafo__sale col-md-4">
-                    <p>The name Black Panther, conjuring up speed and power allied to velvety sleekness, has been a winner for Mapex over the past decade. Now Mapex has given the entire range an overhaul with 14 brand new models.</p>
-                </div>
-                <img class="cuerpo__supersaleimg col-md-5 img-fluid" src="./images/ppal.webp">
-            </div>
-            <section>
-                <h3>NEW ARRIVALS</h3>
-            </section>
-            <section>
-                <div class="cuerpo__supersale row">
-                    <img class="cuerpo__newarrivalsimg img-fluid" src="./images/na.webp">
-                    <div class="parrafo__sale col-md-4">
-                        <p>Browse & discover millions of products. Read customer reviews and find best sellers. </p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <article class="cuerpo__testproducts">
-                    <h3>TEST PRODUCTS</h3>
-                <div class="test">   
-                    <iframe class="cuerpo__testproductsvid" src="https://www.youtube.com/embed/gBM4LE0Upo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div> 
-                </article> 
-            </section>
-        </main>
+    <div class="container">
+        <div class="row">
+            <!--JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2>Top Drummers Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Total -->
+                <p class="text-right">Total: <span id="total"></span>&dollar;;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </div>
     </div>
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    <main class="row">
+        <p class="cuerpo">
+           We have been serving drummers since 1994 in the heart of New York. 
+            On these pages you will find a summary of the products that we offer.
+            Also, if you would like to get rid of that old drumkit up in the attic: just contact us!</p>
+        <section>
+                <h3>SUPER SALE</h3>
+        </section>
+        <div class="cuerpo__supersale row">
+            <div class="parrafo__sale col-md-4">
+                <p>The name Black Panther, conjuring up speed and power allied to velvety sleekness, has been a winner for Mapex over the past decade. Now Mapex has given the entire range an overhaul with 14 brand new models.</p>
+            </div>
+            <img class="cuerpo__supersaleimg col-md-5 img-fluid" src="./images/ppal.webp">
+        </div>
+        <section>
+            <h3>NEW ARRIVALS</h3>
+        </section>
+        <section>
+            <div class="cuerpo__supersale row">
+                <img class="cuerpo__newarrivalsimg img-fluid" src="">
+                <div class="parrafo__sale col-md-4">
+                    <p>Browse & discover millions of products. Read customer reviews and find best sellers. </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <article class="cuerpo__testproducts">
+                <h3>TEST PRODUCTS</h3>
+            <div class="test">   
+                <iframe class="cuerpo__testproductsvid" src="https://www.youtube.com/embed/gBM4LE0Upo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> 
+            </article> 
+        </section>
+    </main>
+</div>
+<script src="./js/main.js"></script>
+<script src="./js/mainusuario.js/"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</body>
+</html>
 </body>
 </html>
