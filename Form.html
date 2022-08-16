@@ -5,24 +5,28 @@
     <title>TopDrummer-Home</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sale of drum instrument accessories">
+    <meta name="keywords" content="html, topdrummer, drummers, shop drummer, cymbals, drums sets, drumsticks, hardware, snares">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="icon" href="../images/logo (1).ico">
 </head>
 <body>
-    <div>
-        <header> 
-            <section>
+    <div class="container-fluid">
+        <header class="header row"> 
+            <section class="header__prin">
                 <div>
                     <h1>TOP DRUMMER</h1>
                     <article>
                         <h2>
-                            <p>The first drums store</p>
+                            <p class="header__slogan">The first drums store</p>
                         </h2>
                     </article>
                 </div>
             </section>
             <nav class="navbar navbar-expand-lg navbar-light bg-black">
-              <div>
+              <div class="header__menu row">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,12 +37,8 @@
               </div>
                   <div class="collapse navbar-collapse row" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="header__menu" href="./index.html">Home</a>
-                        <a class="header__menu">Drums sets</a>
-                        <a class="header__menu">Cymbals</a>
-                        <a class="header__menu">Hardware</a>
-                        <a class="header__menu">Snares</a>
-                        <a class="header__menu">Drumsticks</a>   
+                        <a class="header__menu" href="./Index.html"> Home</a>
+                        <a class="header__menu" href="./Drums sets.html">Drums sets</a>
                     </div>
                   </div>
                 </div>
@@ -84,7 +84,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <label for="validationCustom04" class="form-label">Age</label>
+              <label for="validationCustom04" class="form-label">Zip</label>
               <input type="text" class="form-control" id="validationCustom04" required>
               <div class="invalid-feedback">
                 Please provide a valid Zip.
@@ -112,7 +112,57 @@
               <button class="btn btn-primary colorbotton" type="submit">Submit form</button>
             </div>
           </form>
+          <footer>
+            <div class="footer">
+                <section>
+                    <img  class="footerimg img-fluid" src="../images/footer.jpg">
+                </section>
+                <section>
+                    <a class="footervisit" href="https://www.google.com/maps/place/Memphis+Drum+Shop/@35.1218056,-89.9929331,17z/data=!3m1!4b1!4m5!3m4!1s0x887f874df8ba1687:0xb86743fcede3aa6f!8m2!3d35.1218009!4d-89.9907543?hl=es-419"target="_blank"> VISIT US</a>
+                    <div>
+                        <img class="visit" src="../images/ubicación.png">
+                    </div>
+                </section>
+            <section>
+                <article>
+                    <p class="horarios">CUSTOMER SERVICE HOURS</p>
+                    <table class="table table-dark table-hover">
+                        <tr class="linehorarios">
+                            <th>STORES</th>
+                            <th>MON-FRI</th>
+                            <th>SAT</th>
+                            <th>SUN</th>
+                        </tr>
+                        <tr>
+                            <td>MIAMI</td>
+                            <td>9 AM-8 PM</td>
+                            <td>10 AM-3 PM</td>
+                            <td>CLOSED</td>
+                        </tr>
+                        <tr>
+                            <td>NEW YORK</td>
+                            <td>8 AM-7 PM</td>
+                            <td>9 AM-2 PM</td>
+                            <td>CLOSED</td>
+                        </tr>
+                    </table>
+                 </article>
+                 </section>
+                    <section>
+                 <a class="contactus" href="./Form.html">CONTACT US</a>
+                    <div>
+                        <img class="redes" src="../images/Whatsapp.png">
+                    </div>
+                    <div>   
+                        <img class="redes" src="../images/Instagram.png">
+                    </div> 
+                    <div>
+                        <img class="redes" src="../images/Facebook.png">
+                    </div>
+                </main>
+                </section>
+            </div> 
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
-        <script src="js/main.js"></script>
-      </body>
+    </body>
     </html>

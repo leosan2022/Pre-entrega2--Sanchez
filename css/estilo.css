@@ -1,0 +1,582 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.contenedor{
+    background-color: #1B1A17;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: repeat(7, auto);
+    gap: 10px;
+}
+.contenedor >*{
+    border-color: 2px solid rgb(45, 185, 45);
+    background-color: #1B1A17;
+}
+
+@font-face {
+    font-family: "BIZUDP";
+    src: url(../fonts/BIZUDPMincho-Regular.ttf);
+}
+@font-face {
+    font-family: raggedways;
+    src: url(../fonts/Raggedways\ Regular.otf);
+}
+/*estilos h1 h2 h3 y h4*/ 
+h1{
+    color: #F0A500;
+    font-size: 95px;
+    font-family: raggedways;
+    text-align: start;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    margin-right: 700px;
+    background-image: url(../images/mancha1.png);
+    background-size: 900px 150px;
+}
+h2{
+    color: #E45826;
+    font-size: 45px;
+    font-family: BIZUDP;
+    margin-bottom: 2px;
+    margin-left: 50px;
+    background-image: url(../images/mancha1.png);
+    background-size: 900px 85px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+h3{
+    background-color:#E45826;
+    color:#F0A500;
+    -webkit-text-stroke-color: #1B1A17;
+    font-size: 50px;
+    font-family: raggedways;
+    text-align: center;
+    border-radius: 50px;
+    border-style: groove;
+}
+h4{
+    background-color:#E45826;
+    color:#F0A500;
+    -webkit-text-stroke-color: #1B1A17;
+    font-size: 25px;
+    font-family: BIZUDP;
+    text-align: center;
+    border-radius: 50px;
+    border-style: groove;
+}
+/*estilo carrito de compra y buscador*/
+.carrito{
+    width: 50px;
+    height: 50px;
+    color: #E45826;
+    margin-left: 90%;
+}
+/*estilos del header*/
+.header{
+   background-image: url(../images/banner3.jpg);
+   background-repeat: no-repeat;
+   background-size: 1500px 550px;
+}
+header{
+    grid-column: 1 / span 6;
+}
+.header__prin{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-end;
+}
+.header__img{
+    width: 450px;
+    height: 220px;
+    margin-left: 42px;
+}
+.header__slogan{
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*bootstrap*/
+.header__menu{
+    color: #E45826;
+    width: 120%;
+    font-size: 30px;
+    font-family: BIZUDP;
+    text-align: left;
+    text-decoration:solid;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}    
+/*navbar-nav*/
+.navbar-nav{
+    overflow: hidden;
+}
+.navbar-nav>a{
+    float: left;
+    display: block;
+    color: #E45826;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration:dotted;
+    background-color: #000000;
+}
+/* estilos del main index*/
+.cuerpo{
+    background-color: black;
+    color: #E45826;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border-style: groove;
+}
+
+main{
+    grid-column: 1 / span 6;
+}
+.cuerpo__newarrivals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 30px;
+}
+.parrafo__sale{
+    margin: 50px;
+    text-align:center;
+    font-size: 30px;
+}
+.cuerpo__supersaleimg{
+    width: 620px;
+    height: 380px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 42px;
+    border-style: solid;
+    border-color: #E45826;
+}
+.cuerpo__newarrivalsimg{
+    width: 620px;
+    height: 380px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 42px;
+    border-style: solid;
+    border-color: #E45826;
+}
+.cuerpo__testproductsvid{
+    width: 600px;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 42px;
+    
+}
+.test{
+    text-align: center;
+}
+/*estilos main pages*/
+.titlepages{
+    color: #E45826;
+    font-size: 30px;
+    font-family: BIZUDP;
+    text-align: center;
+    background-color:#E6D5B8;
+}
+.main__pages>li>a{
+    color:#E45826;
+    font-size: 25px;
+    font-family: BIZUDP;
+    text-align: left;
+    margin-left: 20px;
+}
+.main__pages{
+    display: flex;
+    justify-content: center;
+}
+.pag__img{
+    display: flex;
+    justify-content: space-between;
+}
+.pagesimg{
+    max-width: 300px;
+    width: 400px;
+    height: 280px;
+    margin-left: 45%;
+    border-style: solid;
+    border-color: #E45826;
+}
+.pages__supersaleimg{
+    width: 550px;
+    height: 380px;
+    margin-left: auto;
+    border-style: solid;
+    border-color: #E45826;
+}
+/*estilos del footer*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-family: BIZUDP;
+    color:#E45826;
+    font-size: large;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: auto;
+    background-color: black;
+    text-align: center;
+}
+.footerimg{
+    width: 150px; 
+    height: 150px;
+    margin-bottom: 80px;
+    margin-left: auto;
+}
+.footervisit{
+    color:#E45826;
+    text-decoration: none;
+    font-size: large;
+    margin-left: 32px;
+}
+.visit{
+    width: 100px; 
+    height: 100px;
+    margin-left: 30px;
+}
+.table{
+    background-color:#1B1A17;
+    font-size: large;
+    color: #E45826;
+    border-style: solid;
+    border-color: #E45826;
+    margin-left: 42px;
+    }
+.horarios{
+    background-color:black;
+    font-size: large;
+    margin-left: 62px;
+}
+.linehorarios,th,td{
+    border:1px #E6D5B8;
+    border-style: groove;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 42px;
+}
+.contactus{
+    color:#E45826;
+    text-decoration: none;
+    font-size: large;
+    margin: 32px;
+}
+.contact{
+    background-color: black;
+    color: #E45826;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border-style: groove;
+}
+.redes{
+    width: 50px; 
+    height: 50px;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+/*transicion writeus*/
+.importante{
+    margin: auto;
+    color: #1B1A17;
+    text-align: start;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fieldset{
+    margin: auto;
+    width: 120%;
+    margin-top: 25px;
+    margin-bottom: 15PX;
+    background-color: #1B1A17;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #E45826;
+    border-style: solid;
+}
+.fieldset>div:hover{
+    transform: scaleY(1.2);
+}
+.fieldset>div{
+    margin-top: 15px;
+    transition: transform 2s;
+}
+.colorbotton{
+    color: #1B1A17;
+    background-color: #E45826;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-color: #E45826;
+    margin-bottom: 15px;
+}
+/*** media mobile***/
+@media (max-width:600px) {
+    .navbar-nav a {
+        float: none;
+        width: 100%;
+    }
+    .header__img{
+        width: 180px;
+        height: 120px;
+        margin-left: 15%;
+        margin-top: 40px;
+    }
+    .header__slogan{
+        margin-right: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    h1{
+        font-size: 40px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20%;
+    }
+    .pages__supersaleimg{
+        width: 640px;
+        height: 400px;
+        margin-left: auto;
+        margin-top: 40px;
+    }
+    .cuerpo__newarrivalsimg{
+        width: 540px;
+        height: 300px;
+        margin-left: auto;
+        margin-top: 40px;
+    }
+    .horarios{
+        font-size: small;
+        margin-left: 15px;
+    }
+    .footervisit{
+        font-size: small;
+        margin-left: 15px;
+    }
+    .contactus{
+        font-size: small;
+    }
+    .table{
+        font-size: 12px;
+        margin-left: 15px;
+    }
+    .footerimg{
+        width: 100px;
+        height: 100px;
+        margin-left: 12px;
+        margin-top: 16px;
+    }
+}
+/*** media desktop***/
+@media (max-width:1024px) {
+    .navbar-nav a {
+        float: none;
+        width: 100%;
+    }
+    .header__img{
+        width: 400px;
+        height: 350px;
+        margin-left: 15%;
+        margin-top: 40px;
+    }
+    .header__slogan{
+        margin-right: 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+    h1{
+        font-size: 60px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20%;
+    }
+    .pages__supersaleimg{
+        width: 640px;
+        height: 400px;
+        margin-left: auto;
+        margin-top: 40px;
+    }
+    .cuerpo__newarrivalsimg{
+        width: 540px;
+        height: 300px;
+        margin-left: auto;
+        margin-top: 40px;
+    }
+    .horarios{
+        font-size: large;
+    }
+    .footervisit{
+        font-size: large;
+        margin-left: 15px;
+    }
+    .contactus{
+        font-size: large;
+    }
+    .table{
+        font-size: 12px;
+        margin-left: 15px;
+        font-size: medium;
+    }
+    .footerimg{
+        width: 220px;
+        height: 220px;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+}
+/*responsive mobile vertical*/
+@media (max-width:320px) {
+    .navbar-nav a {
+        float: none;
+        width: 100%;
+    }
+    .header{
+        width: 150%;
+        height: 150%;
+    }
+    .header__img{
+        width: 120px;
+        height: 120px;
+        margin-left: 15%;
+        margin-top: 40px;
+    }
+    .header__slogan{
+        margin-right: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    h1{
+        font-size: 60px;
+        text-align: center;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        margin-left: 30%;
+    }
+    h2{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        margin-left: 30%;
+    }
+    .header__menu{
+        color: #E45826;
+        background-color: #000000;
+        width: 100%;
+        font-size: 20px;
+        font-family: BIZUDP;
+        text-align: left;
+        text-decoration:solid;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .cuerpo{
+        background-color: black;
+        color: #E45826;
+        font-size: 22px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        border-style: groove;
+    }
+    
+    .cuerpo__newarrivals{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .parrafo__sale{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .cuerpo__supersaleimg{
+        width: 250px;
+        height: 180px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 42px;
+        border-style: solid;
+        border-color: #E45826;
+    }
+    .cuerpo__newarrivalsimg{
+        width: 250px;
+        height: 180px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 42px;
+        border-style: solid;
+        border-color: #E45826;
+    }
+    .cuerpo__testproductsvid{
+        width: 320px;
+        height: 180px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+   
+    .horarios{
+        font-size: small;
+        margin-left: 15px;
+    }
+    .footervisit{
+        font-size: small;
+        margin-left: 15px;
+    }
+    .contactus{
+        font-size: small;
+    }
+    .table{
+        font-size: 5px;
+        margin-left: 5px;
+    }
+    .footerimg{
+        width: 100px;
+        height: 100px;
+        margin-left: 12px;
+        margin-top: 16px;
+    }
+    .pagesimg{
+        max-width: 30px;
+        width: 40px;
+        height: 28px;
+        margin-left: 15%;
+        border-style: solid;
+        border-color: #E45826;
+    }
+}
