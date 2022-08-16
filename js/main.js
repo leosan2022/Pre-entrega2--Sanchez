@@ -237,4 +237,23 @@ let firstName = "";
 let lastName = "";
 let nickName = "TopDrummer";
 
-    alert( firstName || lastName || nickName || "Undefined"); 
+ /*sweet alert*/
+      
+Swal.fire({
+    title: "Sale #123",
+    text: "¿Remove?",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: "Yes",
+    cancelButtonText: "Cancel",
+})
+.then(resultado => {
+    if (resultado.value) {
+        // Hicieron click en "Sí"
+        console.log("*se elimina la venta*");
+    } else {
+        // Dijeron que no
+        console.log("*NO se elimina la venta*");
+    }
+});
+
